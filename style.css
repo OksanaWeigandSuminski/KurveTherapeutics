@@ -5,8 +5,11 @@
 .top-heading p{width: 100%; text-align: center; color: #787878; font-size: 60px; text-transform: capitalize;font-family: 'Montserrat', sans-serif;}
 .caption{color: #767676;font-size: 18px; font-family: 'Open Sans', sans-serif; font-weight: 300;}
 /* p{font-family: 'Open Sans', sans-serif; font-weight: 300; font-style: italic;} */
+
+/* navbar */
 .navbar{
     background-color: rgba(0,0,0, 0.7);
+    /* rgba(17, 93, 140, 1) */
     /* margin: 8px; */
     padding: 0;
 }
@@ -24,3 +27,41 @@ a.dropdown-item{color: #f2f2f2; font-family: 'Montserrat', sans-serif; font-weig
 a.dropdown-item:hover{background-color: #111;color: #f2f2f2;}
 ul.dropdown-menu.show {background-color: rgba(0,0,0, 0.7);}
 .custom-toggler.navbar-toggler {border-color: #f2f2f2;} 
+
+/* about page */
+.jumbotron{
+  background-image: url("lab.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  color: #115D8C;
+ 
+}
+section{display: block;}
+.facts-block{
+  position: relative;
+  overflow: hidden;
+  background: #115D8C;
+  color: #f2f2f2;
+}
+.facts-block-inner{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: auto;
+  max-width: 1180px;
+}
+.about-paragraph{color: #f2f2f2; 
+  font-size: 25px; 
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300;
+  text-align: center;
+}
+hr.my-4{
+  height: 2px;
+  background: #ffffff !important;
+  max-width: 350px;
+  margin: auto;
+}
