@@ -1,3 +1,6 @@
+body{
+  font-family: "Open Sans", sans-serif;
+}
 .bg-grey {
   background-color: #0f568a;
 	border: 1px solid #e8e4e4;
@@ -81,7 +84,7 @@ ul.dropdown-menu.show {
 	border-color: #f2f2f2;
 }
 
-/* about page */
+/* about Kurve page */
 .jumbotron {
 	background-image: url("lab.jpg");
 	background-size: cover;
@@ -129,3 +132,33 @@ div.col-sm-6 p.about-paragraph::before {
 ::before {
 	box-sizing: inherit;
 }
+/* about Team page */
+.list{
+  padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin: auto;
+	max-width: 1400px;
+
+}
+li.list-group-item{
+  padding-left: 10px;
+  /* float: right; */
+  border: none;
+  background: none;
+  color: #212529 !important;
+}
+li.list-group-item:not(.collapsed){color: #f2f2f2;}
+.accordion-button:not(.collapsed){border-color: #f2f2f2;}
+.accordion-button:not(.collapsed) {
+  color: #f2f2f2;
+  background-color: #0f568a;
+  box-shadow: 0 0 0 0.25rem rgb(15 86 138 / 45%);
+}
+.accordion-button:focus{box-shadow: 0 0 0 0.25rem rgb(15 86 138 / 45%);}
+.accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 0rem;
+}
+/* .accordion-button.collapsed::before{content: "Chairman and Chief Executive Officer"; text-align: right;} */
