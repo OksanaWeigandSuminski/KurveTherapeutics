@@ -161,4 +161,5 @@ li.list-group-item:not(.collapsed){color: #f2f2f2;}
 .accordion-item:last-of-type .accordion-button.collapsed {
   border-radius: 0rem;
 }
+h1.display-5{color: #0f568a;}
 /* .accordion-button.collapsed::before{content: "Chairman and Chief Executive Officer"; text-align: right;} */
