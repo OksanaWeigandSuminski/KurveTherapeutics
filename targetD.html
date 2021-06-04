@@ -17,6 +17,17 @@
 		/>
 		<link href="style.css" rel="stylesheet" />
 		<title>Target Disease</title>
+		<script>
+			function change_tab(id)
+			{
+			  document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+			  document.getElementById("page1").className="notselected";
+			  document.getElementById("page2").className="notselected";
+			  document.getElementById("page3").className="notselected";
+			  document.getElementById("page4").className="notselected";
+			  document.getElementById(id).className="selected";
+			}
+		   </script>
 	</head>
 	<body>
 		<!-- navbar -->
@@ -107,6 +118,66 @@
 		</nav>
 		<!-- /navbar -->
 		<!-- body content -->
+		<section class="facts-block">
+			<div class="facts-block-inner">
+			  <div class="row mt-2">
+				  <div class="col-lg-6" style="margin: auto;">
+					  <p class="about-paragraph">
+						Kurve products have favorable clinical evidence of disease-modifying activity in at least four neurodegenerative diseases. 
+						Market revenues in some cases are for drug products effective for brief periods (3-6 months), after which the efficacy is lost, patient decline accelerates and the use of the drug is discontinued. 
+						With Kurve, efficacy tends to continue for years and in a number of cases actually reverses the course of the disease. Thus, there is significant potential to grow these markets.
+						</p>
+				  </div>
+				</div>
+			</div>
+
+
+		<div id="main_content" class="tabs col-lg-8 text-center">
+			
+			<li class="selected tab" id="page1" onclick="change_tab(this.id);">Alzheimer’s Disease</li>
+			<li class="notselected" id="page2" onclick="change_tab(this.id);">Parkinson’s Disease</li>
+			<li class="notselected" id="page3" onclick="change_tab(this.id);">LBD</li>
+			<li class="notselected" id="page4" onclick="change_tab(this.id);">ALS</li>
+			
+			<div class='hidden_desc' id="page1_desc">
+			 <!-- <h2>Alzheimer’s Disease</h2> -->
+			 With US prevalence estimated at 5.8 million, <span class="lead" style="color: #0f568a;">Alzheimer’s Disease</span> is the only top-10 cause of death in the United States with no known cure. 
+			 It is the sixth-leading cause of death and is the fifth-leading cause of death among those age 65 and older in the US. 
+			 It is also estimated to be the most-expensive disease in the nation. 
+			 The 2018 cost of caring for Americans with Alzheimer’s and other dementias is about $277 billion, not including unpaid caregiving by 16 million Americans annually providing an estimated 18.5 billion hours, valued in aggregate at $234 billion. 
+			 Approved treatments address only symptoms; they do not modify the disease in a fashion seen in some Kurve Therapeutics patients (please see Appendix 1). 
+			 Global revenues for Alzheimer’s drugs were $18 billion in 2018. There is opportunity to grow the market significantly with an effectively- delivered, disease-modifying drug.
+			</div>
+		   
+			<div class='hidden_desc' id="page2_desc">
+			 <!-- <h2>Parkinson’s Disease</h2> -->
+			 <span class="lead" style="color: #0f568a;">Parkinson’s Disease</span> afflicts about 930,000 US patients, with 2030 prevalence forecast to grow to 1.2 million. While for some patients the symptoms can be treated effectively for years, there are no approved drugs that treat the underlying neurodegenerative process. 
+			 Global revenues for Parkinson’s drugs were $4.5 billion in 2018. There is substantial opportunity to enlarge this market with a therapy yielding the disease-modifying experiences seen in some Kurve patients (please see Appendix 2).
+			</div>
+			
+			<div class='hidden_desc' id="page3_desc">
+			 <!-- <h2>Lewy Body Dementia</h2> -->
+			 <span class="lead" style="color: #0f568a;">Lewy Body Dementia (LBD)</span> affects about 1.4 million individuals and their families in the United States. It is the third-most-common dementia in the US, after Alzheimer’s and vascular dementia. 
+			 There are no approved treatments demonstrated to slow or stop the brain cell damage caused by Lewy body dementia. Global LBD drug revenues were $3.5 billion in 2018. Several LBD patients have benefitted significantly from Kurve treatments (patient case reports pending).
+			</div>
+			
+			<div class='hidden_desc' id="page4_desc">
+				<!-- <h2>Amyotrophic Lateral Sclerosis</h2> -->
+				<span class="lead" style="color: #0f568a;">Amyotrophic Lateral Sclerosis (ALS)</span> is a rare disease, with about 16,000 patients in the US. There are only two drugs approved for the treatment of ALS: Sanofi’s Rilutek (riluzole) and Mitsubishi Tanabe’s Radicava (edaravone). 
+				The drugs were special cases in terms of FDA approval; they did not meet the standard regulatory requirements for approval, but due to the increase in survival of patients, they were granted approval. Drug sales for ALS in 2017 were collectively about $200 million in the US, Japan and major European markets (Germany, France, UK, Italy and Spain).
+			</div>
+		</section>
+			<div id="page_content" class="tab col-lg-6">
+			 <!-- <h2>Alzheimer’s Disease</h2> -->
+			 With US prevalence estimated at 5.8 million, <span class="lead" style="color: #0f568a;">Alzheimer’s Disease</span> is the only top-10 cause of death in the United States with no known cure. 
+			 It is the sixth-leading cause of death and is the fifth-leading cause of death among those age 65 and older in the US. 
+			 It is also estimated to be the most-expensive disease in the nation. 
+			 The 2018 cost of caring for Americans with Alzheimer’s and other dementias is about $277 billion, not including unpaid caregiving by 16 million Americans annually providing an estimated 18.5 billion hours, valued in aggregate at $234 billion. 
+			 Approved treatments address only symptoms; they do not modify the disease in a fashion seen in some Kurve Therapeutics patients (please see Appendix 1). 
+			 Global revenues for Alzheimer’s drugs were $18 billion in 2018. There is opportunity to grow the market significantly with an effectively- delivered, disease-modifying drug.
+			</div>
+			
+		   </div>
 
 		<!--/body content-->
 
