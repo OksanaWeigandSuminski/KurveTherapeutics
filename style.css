@@ -1,23 +1,25 @@
-body{
-  font-family: "Open Sans", sans-serif;
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 17px;
+	font-weight: 300;
 }
 .bg-grey {
-  background-color: #0f568a;
-	border: 1px solid #e8e4e4;
-	border-radius: 3.5px;
+	background-color: #0f568a !important;
+	/* border: 1px solid #e8e4e4;
+	border-radius: 3.5px; */
 	padding: 40px;
 }
 .hero-heading.card-title {
 	color: #0f568a;
 	font-size: 35px;
 	text-align: center;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif !important;
 	font-weight: 400;
 }
 .hero-paragraph {
 	color: #000;
 	font-size: 19px;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif !important;
 	font-weight: 300;
 }
 .card-text {
@@ -34,10 +36,10 @@ p.col-12.top-heading {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 }
-.caption {
+span.caption {
 	color: #000;
 	font-size: 16px;
-	font-family: "Open Sans", sans-serif;
+	/* font-family: "Open Sans", sans-serif !important; */
 	font-weight: 300;
 }
 .lead {
@@ -113,7 +115,7 @@ section {
 .about-paragraph {
 	color: #f2f2f2;
 	font-size: 18px;
-	font-family: "Open Sans", sans-serif;
+	/* font-family: "Open Sans", sans-serif !important; */
 	font-weight: 300;
 	text-align: center;
 }
@@ -133,33 +135,47 @@ div.col-sm-6 p.about-paragraph::before {
 	box-sizing: inherit;
 }
 /* about Team page */
-.list{
-  padding-left: 40px;
+.list {
+	/* padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 60px; */
 	margin: auto;
 	max-width: 1400px;
-
 }
-li.list-group-item{
-  padding-left: 10px;
-  /* float: right; */
-  border: none;
-  background: none;
-  color: #212529 !important;
+li.list-group-item {
+	padding-left: 10px;
+	/* float: right; */
+	border: none;
+	background: none;
+	color: #212529 !important;
 }
-li.list-group-item:not(.collapsed){color: #f2f2f2;}
-.accordion-button:not(.collapsed){border-color: #f2f2f2;}
+li.list-group-item:not(.collapsed) {
+	color: #f2f2f2;
+}
 .accordion-button:not(.collapsed) {
-  color: #f2f2f2;
-  background-color: #0f568a;
-  box-shadow: 0 0 0 0.25rem rgb(15 86 138 / 45%);
+	border-color: #f2f2f2;
 }
-.accordion-button:focus{box-shadow: 0 0 0 0.25rem rgb(15 86 138 / 45%);}
-.accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+.accordion-button:not(.collapsed) {
+	color: #f2f2f2;
+	background-color: #0f568a;
+	box-shadow: 0 0 0 0.25rem rgb(15 86 138 / 45%);
+	font-size: 20px;
+}
+.accordion-button:focus {
+	box-shadow: 0 0 0 0.25rem rgb(15 86 138 / 45%);
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
 .accordion-item:last-of-type .accordion-button.collapsed {
-  border-radius: 0rem;
+	border-radius: 0rem;
 }
-h1.display-5{color: #0f568a;}
+h1.display-5 {
+	color: #0f568a;
+}
 /* .accordion-button.collapsed::before{content: "Chairman and Chief Executive Officer"; text-align: right;} */
+
+.accordion-button.collapsed{
+	font-size: 20px;
+}
