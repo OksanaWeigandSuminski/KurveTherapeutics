@@ -249,3 +249,20 @@ hr{
 	background-color: #2c6f9f;
 	border: none;
 }
+/* phase I */
+.results{
+	/* background-color: #0f568a; */
+	margin: 0; /* Reset default margin */
+}
+
+iframe {
+    display: block;       /* iframes are inline by default */
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    /* width: 100vw; */
+	width: 1000px;
+}
+
+div#offcanvasExample.offcanvas.offcanvas-start.show, div#offcanvasExample2.offcanvas.offcanvas-start.show{
+	width: 1000px;
+}
