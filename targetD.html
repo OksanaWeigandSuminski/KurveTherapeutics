@@ -17,17 +17,6 @@
 		/>
 		<link href="style.css" rel="stylesheet" />
 		<title>Target Disease</title>
-		<script>
-			function change_tab(id)
-			{
-			  document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
-			  document.getElementById("page1").className="notselected";
-			  document.getElementById("page2").className="notselected";
-			  document.getElementById("page3").className="notselected";
-			  document.getElementById("page4").className="notselected";
-			  document.getElementById(id).className="selected";
-			}
-		   </script>
 	</head>
 	<body>
 		<!-- navbar -->
@@ -131,13 +120,87 @@
 				</div>
 			</div>
 
+			<!-- Modal Case1-->
+			<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">Michael T., Alzheimer’s Disease Patient</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Michael had his car keys and check book taken away due to his Alzheimer’s disease progressing from mild to moderate.<br>
+						Seven months after starting Kurve with insulin, Michael had his check book and car keys returned. He also found himself a relationship with a new girlfriend.<br>
+						Michael is enthusiastic about the new lease on life the treatments have given him.  
+						He now sends Marc Giroux (Kurve Therapeutics inventor / CEO) vacation pictures, e.g., from the ski slopes in Utah. 
+						He has posted a recent video on benefits from his Kurve treatments <a href="https://youtu.be/FlJTN1XVBAw" target="_blank"><img src="youtube.png" style="width: 30px; margin-left: 10px;"> </a>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Close</button> -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- /Modal Case1-->
 
+			<!-- Modal Case2-->
+			<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">MG, Alzheimer’s Disease Patient</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Diagnosed with early-stage Alzheimer’s disease (mild cognitive impairment) in 2012, after having lost five sisters to Alzheimer’s, MG, shortly after diagnosis, started insulin on Kurve device. 
+						After five months, he was taken off Aricept and four months later was declared symptom-free by his physician at Johns Hopkins University. He remained symptom-free the remainder of his life. He died in 2018 from cardiac arrest.
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Close</button> -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- /Modal Case2-->
+
+			<!-- Modal Case3-->
+			<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel">GS, Parkinson’s Disease Patient</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<b style="font-weight: 400; font-size: 17px;">Letter dated 28 August 2019, from patient’s daughter</b><br>
+						I wanted to take a moment to thank you. My father [GS] was diagnosed with Parkinson’s by Dr S. in February of 2017, at that time he was beginning to really struggle with daily life. 
+						He had started a rapid decline in health both physically and mentally. We were seeing changes almost weekly. He was having a hard time picking up his feet to walk as he hunched forward, bringing a spoon to his mouth was becoming a tearful struggle, his tremors would come and go, the depression was great and getting worse. 
+						He would stare away and we would all try to bring him back to reality. He was sleeping throughout the day. Around December of 2018 my Dad was asked by Dr. S, a Neurologist that runs the neuro movement center at [clinic in California], to please give consideration to a new treatment for brain disorders. 
+						They had begun to see great success in his patients that had been using the Kurve system. We all discussed and figured we had nothing to lose and he had to try it. My Father received a prescription for IgG and information on a company to contact to purchase a nasal delivery system that would possibly help him with Parkinson’s.<br>
+						<b style="font-weight: 400; font-size: 17px;">Fast forward: 8/27/2019</b><br>
+						My Father has been using the IgG with the Kurve nasal delivery system every 2 weeks. He is back at work full time, driving himself. He no longer shuffles. Eating is second nature with no more struggles to bring his hand to mouth and drooling is completely gone. The tremor in his hands are almost totally gone, just a slight bit left. 
+						He has gone back to working out with his trainer 3 days a week. The distant stare is gone. He is engaged and present. The depression is completely under control. His employees say “[GS] is taking a break from Parkinson’s”. No one can believe the change. I wanted you to know how thankful we are to you and your company. 
+						We tell everyone about our experience and we hope and pray that more Doctors will be willing to think outside the box and try new treatments for devastating brain diseases. This is something we never thought possible. 
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Close</button> -->
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- /Modal Case3-->
+
+			<!-- Tabs -->
 		<div id="main_content" class="tabs col-lg-8 text-center">
 			
 			<li class="selected tab" id="page1" onclick="change_tab(this.id);">Alzheimer’s Disease</li>
 			<li class="notselected" id="page2" onclick="change_tab(this.id);">Parkinson’s Disease</li>
 			<li class="notselected" id="page3" onclick="change_tab(this.id);">LBD</li>
 			<li class="notselected" id="page4" onclick="change_tab(this.id);">ALS</li>
+			<li class="notselected" id="page5" onclick="change_tab(this.id);">Patient Cases</li>
 			
 			<div class='hidden_desc' id="page1_desc">
 			 <!-- <h2>Alzheimer’s Disease</h2> -->
@@ -166,7 +229,49 @@
 				<span class="lead" style="color: #0f568a;">Amyotrophic Lateral Sclerosis (ALS)</span> is a rare disease, with about 16,000 patients in the US. There are only two drugs approved for the treatment of ALS: Sanofi’s Rilutek (riluzole) and Mitsubishi Tanabe’s Radicava (edaravone). 
 				The drugs were special cases in terms of FDA approval; they did not meet the standard regulatory requirements for approval, but due to the increase in survival of patients, they were granted approval. Drug sales for ALS in 2017 were collectively about $200 million in the US, Japan and major European markets (Germany, France, UK, Italy and Spain).
 			</div>
+
+			<div class='hidden_desc' id="page5_desc">
+				<!-- <h2>Patient Cases</h2> -->
+				<div class="row">
+					<div class="col-9">
+						<p><b>Case 1:</b> Michael T., Alzheimer’s Disease Patient</p>
+					</div>
+					<div class="col-3">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn" style="float: right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+							Open
+						</button>
+					</div>
+					<!-- <hr class="my-4"> -->
+				</div>
+				<div class="row mt-4">
+					<div class="col-9">
+						<p><b>Case 2:</b> MG, Alzheimer’s Disease Patient</p>
+					</div>
+					<div class="col-3">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn" style="float: right;" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+							Open
+						</button>
+					</div>
+					<!-- <hr class="my-4"> -->
+				</div>
+				<div class="row mt-4">
+					<div class="col-9">
+						<p ><b>Case 3:</b> GS, Parkinson’s Disease Patient</p>
+					</div>
+					<div class="col-3">
+						<!-- Button trigger modal -->
+						<button type="button" style="float: right;" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+							Open
+						</button>
+					</div>
+					<!-- <hr class="my-4"> -->
+				</div>
+				
+			</div>
 		</section>
+			<!-- Displayed paragraph -->
 			<div id="page_content" class="tab col-lg-6">
 			 <!-- <h2>Alzheimer’s Disease</h2> -->
 			 With US prevalence estimated at 5.8 million, <span class="lead" style="color: #0f568a;">Alzheimer’s Disease</span> is the only top-10 cause of death in the United States with no known cure. 
@@ -177,21 +282,38 @@
 			 Global revenues for Alzheimer’s drugs were $18 billion in 2018. There is opportunity to grow the market significantly with an effectively- delivered, disease-modifying drug.
 			</div>
 			
-		   </div>
+		</div>
+		<!-- /Tabs -->
 
 		<!--/body content-->
 
 		<!-- Optional JavaScript; choose one of the two! -->
 
 		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<!-- <script>$('#myModal').on('shown.bs.modal', function () {
+			$('#myInput').trigger('focus')
+		  })</script> -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 			crossorigin="anonymous"
 		></script>
+		<!-- Tabs js functionality -->
+		<script>
+			function change_tab(id)
+			{
+			  document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+			  document.getElementById("page1").className="notselected";
+			  document.getElementById("page2").className="notselected";
+			  document.getElementById("page3").className="notselected";
+			  document.getElementById("page4").className="notselected";
+			  document.getElementById("page5").className="notselected";
+			  document.getElementById(id).className="selected";
+			}
+		   </script>
 
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
-		<!--
+<!-- 		
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
