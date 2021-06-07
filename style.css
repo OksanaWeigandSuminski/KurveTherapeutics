@@ -244,11 +244,11 @@ h1.display-5 {
 .btn:focus {
 	box-shadow: 0 0 0 0.25rem rgb(15 86 138 / 45%);
 }
-hr{
+/* hr{
 	height: 1px;
 	background-color: #2c6f9f;
 	border: none;
-}
+} */
 /* phase I */
 .results{
 	/* background-color: #0f568a; */
