@@ -109,7 +109,7 @@ section {
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 40px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	margin: auto;
 	max-width: 1400px;
 }
@@ -118,6 +118,13 @@ section {
 	font-size: 18px;
 	/* font-family: "Open Sans", sans-serif !important; */
 	font-weight: 300;
+	text-align: center;
+}
+p.bottom {
+	color: #f2f2f2;
+	font-size: 20px !important;
+	/* font-family: "Open Sans", sans-serif !important; */
+	font-weight: 700;
 	text-align: center;
 }
 div.col-sm-6 p.about-paragraph::before {
