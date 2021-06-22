@@ -2,7 +2,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	font-weight: 300;
-	color:#212529 ;
+	color: #212529;
 }
 .bg-grey {
 	background-color: #0f568a !important;
@@ -33,7 +33,7 @@ p.col-12.top-heading {
 	width: 100%;
 	text-align: center;
 	color: #f2f2f2;
-	font-size: 40px;
+	font-size: 40px !important;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 }
@@ -184,7 +184,7 @@ h1.display-5 {
 }
 /* .accordion-button.collapsed::before{content: "Chairman and Chief Executive Officer"; text-align: right;} */
 
-.accordion-button.collapsed{
+.accordion-button.collapsed {
 	font-size: 20px;
 }
 /* targetD */
@@ -201,50 +201,46 @@ h1.display-5 {
 	background: #f2f2f2;
 } */
 /* tabs */
-#main_content
-{
- margin: auto;
+#main_content {
+	margin: auto;
 }
-#main_content li
-{
- display:inline;
- list-style-type:none;
- /* background-color:#688A08; */
- padding:10px;
- margin-top: 50px;
- border-radius:2px 2px 0px 0px;
- color:#292A0A;
- /* font-weight:bold; */
- cursor:pointer;
+#main_content li {
+	display: inline;
+	list-style-type: none;
+	/* background-color:#688A08; */
+	padding: 10px;
+	margin-top: 50px;
+	border-radius: 2px 2px 0px 0px;
+	color: #292a0a;
+	/* font-weight:bold; */
+	cursor: pointer;
 }
-#main_content li.notselected
-{
- background-color:#2c6f9f;
- color:#f2f2f2 ;	
+#main_content li.notselected {
+	background-color: #2c6f9f;
+	color: #f2f2f2;
 }
-#main_content li.selected
-{
- background-color:#fff;
- color:#212529 ;	
+#main_content li.selected {
+	background-color: #fff;
+	color: #212529;
 }
-#main_content .hidden_desc
-{
- display:none;
- visibility:hidden;
+#main_content .hidden_desc {
+	display: none;
+	visibility: hidden;
 }
-.tab{
+.tab {
 	margin: auto;
 	padding: 50px;
 }
-.modal-title, .modal-body{
-	color:#212529 ;
+.modal-title,
+.modal-body {
+	color: #212529;
 }
-.btn{
+.btn {
 	padding: 10px;
 	background-color: #0f568a;
 	color: #f2f2f2;
 }
-.btn:hover{
+.btn:hover {
 	background-color: #2c6f9f;
 	color: #f2f2f2;
 }
@@ -257,34 +253,36 @@ h1.display-5 {
 	border: none;
 } */
 /* phase I */
-.results{
+.results {
 	/* background-color: #0f568a; */
 	margin: 0; /* Reset default margin */
 }
 
 iframe {
-    display: block;       /* iframes are inline by default */
-    border: none;         /* Reset default border */
-    height: 100vh;        /* Viewport-relative units */
-    /* width: 100vw; */
+	display: block; /* iframes are inline by default */
+	border: none; /* Reset default border */
+	height: 100vh; /* Viewport-relative units */
+	/* width: 100vw; */
 	width: 1000px;
 }
 
-div#offcanvasExample.offcanvas.offcanvas-start.show, div#offcanvasExample2.offcanvas.offcanvas-start.show, div#offcanvasExample3.offcanvas.offcanvas-start.show{
+div#offcanvasExample.offcanvas.offcanvas-start.show,
+div#offcanvasExample2.offcanvas.offcanvas-start.show,
+div#offcanvasExample3.offcanvas.offcanvas-start.show {
 	width: 1000px;
 }
-p.phase.card-text{
+p.phase.card-text {
 	text-align: left;
 }
 /* phase II */
-a.card-link{
+a.card-link {
 	text-decoration: none;
 	color: #0f568a;
 }
 /* technology */
-.tech{
+.tech {
 	background-color: #0f568a;
 }
-div.card.technology{
+div.card.technology {
 	border-radius: 0;
 }
