@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Open+Sans:wght@300;400&display=swap");
+		</style>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link href="style.css" rel="stylesheet" />
+		<title>Target Disease</title>
+	</head>
+	<body>
+				<!-- navbar -->
+				<nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+					<div class="container">
+						<a class="navbar-brand" style="padding-top: 0; padding-bottom: 0">
+							<img src="Kurve.png" alt="Kurve Logo" width="146" height="90" />
+						</a>
+						<button
+							class="navbar-toggler custom-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNavDropdown"
+							aria-controls="navbarNavDropdown"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="index.html"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="technology.html">Technology</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="target_disease.html">Target Diseases</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										id="navbarDropdownMenuLink"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Results
+									</a>
+									<ul
+										class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink"
+									>
+										<li>
+											<a class="dropdown-item" href="phase_II.html"
+												>Phase II Alzheimer’s disease trials</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="phase_IIb.html"
+												>18-month, multi-center, Phase IIb Alzheimer’s disease trial</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="cognitive_aging.html"
+												>Cognitive aging (diabetes / age-matched controls)</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="parkinson's_disease.html"
+												>Parkinson’s disease</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="patient_cases.html"
+												>Patient cases</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										id="navbarDropdownMenuLink"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										About
+									</a>
+									<ul
+										class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink"
+									>
+										<li>
+											<a class="dropdown-item" href="about.html"
+												>Kurve Therapeutics</a
+											>
+										</li>
+										<li><a class="dropdown-item" href="team.html">Team</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- /navbar -->
+		<!-- body content -->
+		<section class="facts-block">
+			<div class="facts-block-inner">
+			  <div class="row mt-2">
+				  <div class="col-lg-6" style="margin: auto;">
+					  <p class="about-paragraph">
+						Kurve products have favorable clinical evidence of disease-modifying activity in at least four neurodegenerative diseases. Marketed drug products are of limited efficacy, sometimes having benefits only briefly (3-6 months), after which patient decline accelerates and the use of the drug is discontinued. 
+						With Kurve, efficacy has continued for years in individual patient cases and in a number of cases actually reversed the course of the disease. 
+						The longest clincal trial yet showed continuing efficacy vs. the placebo group for 18 months. Kurve offers significant potential to advance the standard of care.
+						</p>
+				  </div>
+				</div>
+			</div>
+
+			<!-- Tabs -->
+		<div id="main_content" class="tabs col-lg-8 text-center">
+			
+			<li class="selected tab" id="page1" onclick="change_tab(this.id);">Alzheimer’s Disease</li>
+			<li class="notselected" id="page2" onclick="change_tab(this.id);">Parkinson’s Disease</li>
+			<li class="notselected" id="page3" onclick="change_tab(this.id);">LBD</li>
+			<li class="notselected" id="page4" onclick="change_tab(this.id);">ALS</li>
+			<!-- <li class="notselected" id="page5" onclick="change_tab(this.id);">Patient Cases</li> -->
+			
+			<div class='hidden_desc' id="page1_desc">
+			 <!-- <h2>Alzheimer’s Disease</h2> -->
+			 <span class="lead" style="color: #0f568a;">Alzheimer’s Disease,</span> with US prevalence estimated at 6 million, is the only top-10 cause of death in the United States with no known cure. 
+			 It is the sixth-leading cause of death and is the fifth-leading cause of death among those age 65 and older in the US. 
+			 It is also estimated to be the most-expensive disease in the nation. 
+			 The 2018 cost of caring for Americans with Alzheimer’s and other dementias is about $277 billion, not including unpaid caregiving by 16 million Americans annually providing an estimated 18.5 billion hours, valued in aggregate at $234 billion. 
+			 Approved treatments address only symptoms; they do not modify the disease in a fashion seen in some Kurve Therapeutics patient cases (please see Patient cases under Results) and clinical trials.  
+			 Global revenues for Alzheimer’s drugs were $18 billion in 2018. There is opportunity to grow the market significantly with an effectively- delivered, disease-modifying drug.
+			</div>
+		   
+			<div class='hidden_desc' id="page2_desc">
+			 <!-- <h2>Parkinson’s Disease</h2> -->
+			 <span class="lead" style="color: #0f568a;">Parkinson’s Disease</span> afflicts about 930,000 US patients, with 2030 prevalence forecast to grow to 1.2 million. While for some patients the symptoms can be treated effectively for years, there are no approved drugs that treat the underlying neurodegenerative process. 
+			 Global revenues for Parkinson’s drugs were $4.5 billion in 2018. There is substantial opportunity to enlarge this market with a therapy yielding the disease-modifying experiences seen in some Kurve patients (please see Patient cases under Results).
+			</div>
+			
+			<div class='hidden_desc' id="page3_desc">
+			 <!-- <h2>Lewy Body Dementia</h2> -->
+			 <span class="lead" style="color: #0f568a;">Lewy Body Dementia (LBD)</span> affects about 1.4 million individuals and their families in the United States. It is the third-most-common dementia in the US, after Alzheimer’s and vascular dementia. 
+			 There are no approved treatments demonstrated to slow or stop the brain cell damage caused by Lewy body dementia. Global LBD drug revenues were $3.5 billion in 2018. Several LBD patients have benefitted significantly from Kurve treatments (patient case reports pending).
+			</div>
+			
+			<div class='hidden_desc' id="page4_desc">
+				<!-- <h2>Amyotrophic Lateral Sclerosis</h2> -->
+				<span class="lead" style="color: #0f568a;">Amyotrophic Lateral Sclerosis (ALS)</span> is a rare disease, with about 16,000 patients in the US. There are only two drugs approved for the treatment of ALS: Sanofi’s Rilutek (riluzole) and Mitsubishi Tanabe’s Radicava (edaravone). 
+				The drugs were special cases in terms of FDA approval; they did not meet the standard regulatory requirements for approval, but due to the increase in survival of patients, they were granted approval. Drug sales for ALS in 2017 were collectively about $200 million in the US, Japan and major European markets (Germany, France, UK, Italy and Spain).
+			</div>
+
+		</section>
+			<!-- Displayed paragraph -->
+			<div id="page_content" class="tab col-lg-6 card shadow p-3 mb-5 bg-body rounded container" style="border-color: #fff;">
+			 <!-- <h2>Alzheimer’s Disease</h2> -->
+			 <span class="lead" style="color: #0f568a;">Alzheimer’s Disease,</span> with US prevalence estimated at 6 million, is the only top-10 cause of death in the United States with no known cure. 
+			 It is the sixth-leading cause of death and is the fifth-leading cause of death among those age 65 and older in the US. 
+			 It is also estimated to be the most-expensive disease in the nation. 
+			 The 2018 cost of caring for Americans with Alzheimer’s and other dementias is about $277 billion, not including unpaid caregiving by 16 million Americans annually providing an estimated 18.5 billion hours, valued in aggregate at $234 billion. 
+			 Approved treatments address only symptoms; they do not modify the disease in a fashion seen in some Kurve Therapeutics patient cases (please see Patient cases under Results) and clinical trials. 
+			 Global revenues for Alzheimer’s drugs were $18 billion in 2018. There is opportunity to grow the market significantly with an effectively- delivered, disease-modifying drug.
+			</div>
+			
+		</div>
+		<!-- /Tabs -->
+
+		<!--/body content-->
+
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<!-- <script>$('#myModal').on('shown.bs.modal', function () {
+			$('#myInput').trigger('focus')
+		  })</script> -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+		<!-- Tabs js functionality -->
+		<script>
+			function change_tab(id)
+			{
+			  document.getElementById("page_content").innerHTML=document.getElementById(id+"_desc").innerHTML;
+			  document.getElementById("page1").className="notselected";
+			  document.getElementById("page2").className="notselected";
+			  document.getElementById("page3").className="notselected";
+			  document.getElementById("page4").className="notselected";
+			//   document.getElementById("page5").className="notselected";
+			  document.getElementById(id).className="selected";
+			}
+		   </script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!-- 		
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+	</body>
+</html>

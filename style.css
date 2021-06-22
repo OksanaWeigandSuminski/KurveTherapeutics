@@ -270,7 +270,7 @@ iframe {
 	width: 1000px;
 }
 
-div#offcanvasExample.offcanvas.offcanvas-start.show, div#offcanvasExample2.offcanvas.offcanvas-start.show{
+div#offcanvasExample.offcanvas.offcanvas-start.show, div#offcanvasExample2.offcanvas.offcanvas-start.show, div#offcanvasExample3.offcanvas.offcanvas-start.show{
 	width: 1000px;
 }
 p.phase.card-text{
