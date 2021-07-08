@@ -12,6 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <title>About</title>
+	<style>
+		#map{
+		  height:400px;
+		  width:100%;
+		}
+	  </style>
   </head>
   <body>
 		<!-- navbar -->
@@ -161,7 +167,7 @@
           <div class="row mt-4">
             <div class="col-sm-12">
               <b><p class="bottom">
-                There are now over a dozen peer-reviewed publications of trials using Kurve nose-to-brain delivery technology, with further publications pending. 
+                There are now seventeen peer-reviewed publications of trials using Kurve nose-to-brain delivery technology, with further publications pending. 
                 The company has recent or ongoing collaborations with several leading research centers, including Harvard, Johns Hopkins and the Karolinska Institute.
               </p></b>
             </div>
@@ -179,5 +185,94 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
+	<h1 class="text-center display-6">Kurve Therapeutics On The US Map</h1>
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:4,
+        center:{lat:40.7128,lng:-74.0060}
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+
+      // Listen for click on map
+    //   google.maps.event.addListener(map, 'click', function(event){
+        // Add marker
+    //     addMarker({coords:event.latLng});
+    //   });
+
+      /*
+      // Add marker
+      var marker = new google.maps.Marker({
+        position:{lat:42.4668,lng:-70.9495},
+        map:map,
+        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:'<h1>Lynn MA</h1>'
+      });
+
+      marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+      });
+      */
+
+      // Array of markers
+      var markers = [
+        {
+          coords:{lat:40.7831,lng:-73.9712},
+        //   iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:'<h3>Manhattan, NY </h3><br><h4><ul><li>Text Sample</li><li>Text Sample</li></ul></h4>'
+        },
+        {
+          coords:{lat:47.8209,lng:-122.3151},
+          content:'<h3>Lynnwood, WA</h3><br><h4><ul><li>Text Sample</li><li>Text Sample</li></ul></h4>'
+        }
+		// ,
+        // {
+        //   coords:{lat:42.7762,lng:-71.0773}
+        // }
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgwVwqxLVXPgwFXzz-gzAxXluUqe_HIXg&callback=initMap">
+    </script>
   </body>
 </html>
