@@ -286,3 +286,8 @@ a.card-link {
 div.card.technology {
 	border-radius: 0;
 }
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
